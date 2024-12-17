@@ -12,18 +12,9 @@
     width: 100vw;
 }
 
-/* #app{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: "fixed";
-    top: 0px;
-    left: 0px;
-    height: 100vh;
-    width: 100vw;
-    overflow: visible;
-} */
+#app{
+    transition-duration: 1s;
+}
 
 #button{
     position: fixed;
