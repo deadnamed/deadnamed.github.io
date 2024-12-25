@@ -60,13 +60,6 @@ const middleCanvasSetup = ()=>{
         learnMoreText.style.textAlign = "center";
         learnMoreText.innerHTML = "Learn more about this image"
         learnMore.appendChild(learnMoreText);
-
-        child.addEventListener('mouseover', ()=>{
-            learnMore.style.clipPath = "circle(50% at 50% 50%)";
-        })
-        child.addEventListener('mouseleave', ()=>{
-            learnMore.style.clipPath = "circle(0% at 50% 50%)"
-        })
         i++;
     }
 }
@@ -83,7 +76,7 @@ const topCanvasSetup = ()=>{
     for (let child of topCanvasCarousel.children) {
         child.style.transform = `translate(${-child.offsetWidth/2 + shiftRadius*Math.sin(2*pi*i/length)}px, ${-child.offsetHeight/2 + shiftRadius*Math.cos(2*pi*i/length)}px)`;
         const image = document.createElement("img");
-        image.src = `https://picsum.photos/500?random=${i.toString()}`
+        image.src = `https://picsum.photos/500?random=10${i.toString()}`
         child.appendChild(image);
         child.style.pointerEvents = "all";
 
@@ -97,13 +90,6 @@ const topCanvasSetup = ()=>{
         learnMoreText.style.textAlign = "center";
         learnMoreText.innerHTML = "Learn more about this image"
         learnMore.appendChild(learnMoreText);
-
-        child.addEventListener('mouseover', ()=>{
-            learnMore.style.clipPath = "circle(50% at 50% 50%)";
-        })
-        child.addEventListener('mouseleave', ()=>{
-            learnMore.style.clipPath = "circle(0% at 50% 50%)"
-        })
         i++;
     }
 }

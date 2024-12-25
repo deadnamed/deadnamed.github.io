@@ -84,13 +84,25 @@
     to {transform: rotate(-360deg)}
 }
 
-.LearnMore{
+.Item .LearnMore{
     height: 100%;
     width: 100%;
     background-color: #FFDDFF;
     z-index: 2;
     transition: 0.5s ease-in-out;
     clip-path: circle(0% at 50% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Item:hover .LearnMore{
+    height: 100%;
+    width: 100%;
+    background-color: #FFDDFF;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+    clip-path: circle(50% at 50% 50%);
     display: flex;
     align-items: center;
     justify-content: center;
