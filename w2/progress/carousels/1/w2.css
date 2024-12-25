@@ -1,0 +1,36 @@
+*{
+    font-family: 'Cormorant Garamond', 'serif';
+    pointer-events: none;
+}
+
+.Circle {
+    border-radius: 50%;
+}
+
+.Container {
+    height: 40vw;
+    width: 40vw;
+    background-color: #222222;
+}
+
+.Canvas{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
