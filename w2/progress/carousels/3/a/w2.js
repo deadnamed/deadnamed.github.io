@@ -25,4 +25,9 @@ document.addEventListener('mousemove', (e) => {
     middleCanvas.animate(middleCanvasMovement, timing)
     bottomCanvas.animate(bottomCanvasMovement, timing)
 })
-    
+
+const middleCanvasCarousel = document.getElementById("MiddleCanvasCarousel")
+const middleCanvasItems = middleCanvasCarousel.children
+function getRadii(){
+    console.log(middleCanvasCarousel.offsetWidth/2, middleCanvasItems[0].offsetWidth/2)
+}
