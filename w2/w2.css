@@ -55,6 +55,7 @@
 
 .Item {
     overflow: hidden;
+    pointer-events: all;
 }
 
 .Item > img {
@@ -143,5 +144,4 @@
 
 .hidden{
     opacity: 0;
-    pointer-events: none !important;
 }

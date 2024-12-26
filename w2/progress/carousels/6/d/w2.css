@@ -1,0 +1,95 @@
+*{
+    font-family: 'Cormorant Garamond', 'serif';
+    pointer-events: none;
+}
+
+.Circle {
+    border-radius: 50%;
+}
+
+.Container {
+    height: 40vw;
+    width: 40vw;
+    background-color: #222222;
+}
+
+.Item{
+    height: 10vw;
+    width: 10vw;
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    pointer-events: all;
+}
+
+.Item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Canvas{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+
+#MiddleCanvasCarousel {
+    animation: spin 60s infinite linear;
+}
+
+@keyframes backspin {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(-360deg)}
+}
+
+#MiddleCanvasCarousel img {
+    animation: backspin 60s infinite linear;
+}
+
+.Item .LearnMore{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #FFDDFF;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+    clip-path: circle(0% at 50% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Item:hover .LearnMore{
+    transition: 0.5s ease-in-out;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.LearnMore {
+    animation: backspin 60s infinite linear;
+}
